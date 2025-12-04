@@ -11,17 +11,19 @@
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
-            background: #f8dfe8 url('https://i.imgur.com/0YV6I9E.jpg'); /* soft pink texture */
-            background-size: cover;
+
+            /* medium soft white → pink → lavender gradient */
+            background: linear-gradient(135deg, #ffffff 0%, #ffdbea 45%, #ebdbff 100%);
             background-attachment: fixed;
+
             color: #333;
         }
 
-        /* Navigation */
+        /* Navigation Bar */
         nav {
             text-align: center;
             padding: 18px 0;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(6px);
             position: sticky;
             top: 0;
@@ -39,14 +41,15 @@
         }
 
         nav a:hover {
-            background: #f6d2de; /* soft pink hover */
+            background: #f6d2de;
             color: #333;
         }
 
+        /* Main Content Box */
         .container {
             max-width: 750px;
             margin: 70px auto;
-            background: #ffffffd6;
+            background: #ffffffcc; /* soft transparent white */
             padding: 45px;
             border-radius: 18px;
             box-shadow: 0 0 15px rgba(0,0,0,0.08);
@@ -68,7 +71,7 @@
         }
 
         .accent {
-            color: #d77e9d; /* soft muted rose pink */
+            color: #d77e9d;
             font-weight: 600;
         }
     </style>
@@ -87,7 +90,7 @@
 <div class="container">
     <h1>Welcome, I'm <span class="accent">Jan Nicole</span></h1>
     <p>
-        I’m Jan. I made this small website myself — just a soft little space where I can share  
+        I’m Jan. I made this small website myself — a soft little space where I can share  
         who I am and the things that matter to me.
     </p>
 </div>
